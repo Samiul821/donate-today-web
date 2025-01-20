@@ -54,3 +54,10 @@
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+/* resposive for mobile */
+@media screen and (max-width:576px) {
+    .hero-content{
+        width: 90%;
+    }
+}
