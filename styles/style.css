@@ -28,6 +28,17 @@
     color: #FFFFFF;
 }
 
+.praimary-title{
+    font-size: 2.81rem;
+    color: #121212;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.color{
+    color: #707070;
+}
+
 /* banner-section */
 .hero{
     width: 100%;
@@ -55,9 +66,80 @@
     margin-bottom: 20px;
 }
 
+/* donate section */
+.donate-section{
+    width: 763px;
+    height: auto;
+    margin: 0 auto 130px auto;
+    text-align: center;
+}
+
+.donate-container{
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 22px;
+   margin-bottom: 60px;
+}
+
+.donate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 135px;
+    height: 123px;
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+
+.donate-200{
+    width: 135px;
+    height: 123px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgb(255, 238, 238);
+    border: 2px solid #ff6969;
+    border-radius: 5px;
+}
+
+.donate-200{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ff6969;
+}
+
+.donate .taka{
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #707070;
+}
+
+input{
+    width: 763px;
+    border: none;
+    border-bottom: 2px solid #dadada;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+input::placeholder{
+    text-align: center;
+    font-size: 1.125rem;
+}
+
 /* resposive for mobile */
 @media screen and (max-width:576px) {
-    .hero-content{
+    .hero-content, 
+    .donate-section, 
+    input{
         width: 90%;
+    }
+
+    .donate-container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        justify-items: center;
     }
 }
